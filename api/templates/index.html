@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yoga Pose Analyser</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="center">
+		<h1>Yoga Pose Analyser</h1>
+		<p>The yoga pose analyser will use webcam to identify a yoga pose from the following 3 poses: Tree right, Tree left and Warrior 2.</p>
+		<p>Tree right and Tree left indicate Tree pose formed using right and left leg respectively.</p>
+		<p>The frame size is 450 x 450. It is recommended to adjust the angle of laptop so that the entire body is visible. </p>
+		<p>Optimal results are found when the distance between camera and person is about 185 centimeters.</p>
+		<p>For best results, it is recommended to stand in front of a white background.</p>
+		<p>To stop yoga pose analysis, press 'q'.</p>
+		<form action="/analysepose" method="get">
+			<input type="submit" value="Start">
+		</form>
+	</div>
+</body>
+</html>
